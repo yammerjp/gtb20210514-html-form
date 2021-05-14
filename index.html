@@ -46,9 +46,45 @@
             .input-logo-img {
                 width:100%;
             }
+
             h1 {
-                margin: 20vh 0 0 0;
+                margin: 60px 0 36px 0;
             }
+
+            .input-input-mailaddress::placeholder {
+                content: "mail"
+            }
+            .input-input-mailaddress:focus::placeholder {
+                display: none;
+            }
+            .input-others {
+                font-size: 12px;
+                width: 100%;
+                text-align: center;
+                margin-top: 16px;
+            }
+            .input-others a {
+                color: #555555;
+            }
+            .input-login-button-wrap {
+
+                margin: 36px 0px;
+            }
+            .input-login-button {
+                width: 100%;
+                padding: 8px;
+                border-radius: 32px;
+                border-color: #555555;
+                background-color: #eeeeee;
+                border-width: 1px;
+            }
+            .input-login-button:hover {
+                background-color: #f4f4f4;
+            }
+            .input-login-button:active {
+                background-color: #eeeeee;
+            }
+
         </style>
     </head>
     <body>
@@ -62,10 +98,24 @@
             </div>
         <div class="input-title">メールアドレス</div>
         <div>
+            <!--
             <input type="email" class="input-mailaddress" placeholder="lively@example.com"></input>
+            -->
+            <input type="email" class="input-mailaddress"></input>
         </div>
-        <div class="input-title">password</div>
+        <div class="input-title">パスワード</div>
         <div><input type="password" class="input-password"></input></div>
+        <div class="input-login-button-wrap">
+            <button class="input-login-button">ログイン</button></div>
+        <div class="input-others">
+            <a href="#">
+            パスワードを忘れましたか？
+            </a>
+            ・
+            <a href="#">
+            アカウント作成
+            </a>
+        </div>
         </div>
         <script src="" async defer></script>
     </body>
